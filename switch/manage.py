@@ -2,8 +2,15 @@
 import os
 import sys
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+sys.path.append(BASE_DIR)
+
+print(os.getcwd())
+
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "superm.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.dev_config")
     try:
         from django.core.management import execute_from_command_line
     except ImportError:
