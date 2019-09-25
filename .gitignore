@@ -1,3 +1,4 @@
 config/dev_config.py
 superm/settings.py
 __pycache__
+.idea
